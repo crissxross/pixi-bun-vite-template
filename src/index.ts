@@ -1,8 +1,8 @@
 import { SceneManager } from './shared/scene-manager';
 import { LoaderScene } from './scenes/loader-scene';
-import { TRANSPARENT } from './shared/constants'; // or FILL_COLOR
+import { FILL_COLOR } from './shared/constants';
 
-SceneManager.init(TRANSPARENT);
+SceneManager.init(FILL_COLOR, 0);
 
 const loady: LoaderScene = new LoaderScene();
 SceneManager.changeScene(loady);

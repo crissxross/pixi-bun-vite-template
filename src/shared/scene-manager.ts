@@ -14,14 +14,14 @@ export class SceneManager {
         return Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
     }
 
-    public static init(background: number): void {
+    public static init(bgColor: string, bgAlpha: number): void {
         SceneManager._app = new Application({
             view: document.getElementById("pixi-canvas") as HTMLCanvasElement,
             resizeTo: window,
 	        resolution: window.devicePixelRatio || 1,
             autoDensity: true,
-            // backgroundColor: background,
-            backgroundAlpha: background, //0
+            backgroundColor: bgColor,
+            backgroundAlpha: bgAlpha,
         });
 
         SceneManager._app.ticker.add(SceneManager.update);

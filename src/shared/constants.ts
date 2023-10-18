@@ -1,2 +1,1 @@
-export const FILL_COLOR = 0xffffff;
-export const TRANSPARENT = 0;
+export const FILL_COLOR = 'hsl(0 0% 100%)';
