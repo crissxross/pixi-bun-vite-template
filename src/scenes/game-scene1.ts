@@ -24,14 +24,17 @@ export class GameScene1 extends Container implements IScene {
         this.sky.anchor.set(0.5);
         this.sky.width = parentWidth;
         this.sky.height = parentHeight;
-        this.sky.position.x = parentWidth/2;
-        this.sky.position.y = parentHeight/2;
+        this.sky.position.x = parentWidth * 0.5;
+        this.sky.position.y = parentHeight * 0.5;
         this.sky.alpha = 0;
 
         this.pixiLogo = Sprite.from("pixiLogo");
         this.pixiLogo.anchor.set(0.5);
-        this.pixiLogo.position.x = parentWidth/2;
-        this.pixiLogo.position.y = parentHeight/2;
+        // size of logo is 734x288 therefore its aspect ratio is 1:0.39
+        this.pixiLogo.width = Math.min(parentWidth * 0.6, 734);
+        this.pixiLogo.height = Math.min(parentWidth * 0.6, 734) * 0.39;
+        this.pixiLogo.position.x = parentWidth * 0.5;
+        this.pixiLogo.position.y = parentHeight * 0.5;
 
         this.pixiLogo.eventMode = 'static';
         this.pixiLogo.cursor = 'pointer';
@@ -69,7 +72,7 @@ export class GameScene1 extends Container implements IScene {
         this.sky.width = parentWidth;
         this.sky.height = parentHeight;
 
-        this.pixiLogo.position.x = parentWidth/2;
-        this.pixiLogo.position.y = parentHeight/2;
+        this.pixiLogo.position.x = parentWidth * 0.5;
+        this.pixiLogo.position.y = parentHeight * 0.5;
     }
 }

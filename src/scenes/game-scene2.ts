@@ -22,10 +22,12 @@ export class GameScene2 extends Container implements IScene {
 
         const style = new TextStyle({
             fontFamily: "system-ui",
-            fontSize: 36,
+            fontSize: 30,
             fontWeight: "bold",
             align: "center",
-            lineHeight: 54,
+            lineHeight: 50,
+            wordWrap: true,
+            wordWrapWidth: parentWidth * 0.80,
             fill: ['#ffffff', "hsl(30 100% 80%)"],
             stroke: "hsl(30 100% 30%)",
             strokeThickness: 3,
