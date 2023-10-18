@@ -1,13 +1,13 @@
 # PixiJS Bun Vite TS Template
 
 
-Clone this repo & start developing! (Note: WIP)
+Clone or download this repo & start developing! (Note: WIP)
 
 ![Pixi JS logo](/public/logo/pixi.svg)
 
 Pixi v.7, GSAP v.3 & vanilla TypeScript
 
-## get started
+## Get started
 
 ```
 $ cd your-repo-name
@@ -15,10 +15,16 @@ $ bun install
 $ bun run dev
 ```
 
-## build
+## Build
 
 ```
-$ bunx --bun vite build
+$ bun run build
+```
+
+## Preview the build
+
+```
+$ bun run preview
 ```
 
 ## Reference sources
