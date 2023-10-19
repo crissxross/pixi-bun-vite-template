@@ -27,10 +27,10 @@ $ bun run build
 $ bun run preview
 ```
 
-## Reference sources
+## Template reference sources
 
-- [Build a frontend using Vite and Bun](https://bun.sh/guides/ecosystem/vite)
 - Template adapted from [Pixi JS + Typescript + Vite template](https://github.com/turbokirichenko/pixijs-typescript-vite-template)
+- [Build a frontend using Vite and Bun](https://bun.sh/guides/ecosystem/vite)
 - [pixi elementals](https://www.pixijselementals.com/#before-we-even-start)
 - [pixi js official website](https://pixijs.com/)
 - [vite guide](https://vitejs.dev/guide/)
